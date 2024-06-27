@@ -17,6 +17,7 @@ namespace Auth.Controllers
         {
             _roleManager = roleManager;
         }
+
         [HttpPost("AddRole")]
         public async Task<IActionResult> AddRole(RoleModel roleModel)
         {
