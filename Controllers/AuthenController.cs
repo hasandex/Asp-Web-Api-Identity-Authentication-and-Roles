@@ -63,7 +63,7 @@ namespace Auth.Controllers
             // Try to find the user by username first
             var user = await _userManager.FindByNameAsync(model.Username);
 
-            // If not found by username, try to find the user by email
+            // If not found by username, try to find the user by email :)
             if (user == null)
             {
                 user = await _userManager.FindByEmailAsync(model.Username);
